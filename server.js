@@ -13,11 +13,11 @@ connectDB();
 // Security middleware
 app.use(helmet());
 
-// CORS - Allow local frontend origins
+// CORS - Allow local frontend origins and deployed frontend origin
 const allowedOrigins = [
   "http://localhost:4200",
   "http://localhost:4300",
-  "https://your-app.vercel.app",
+  "https://money-lending-one.vercel.app",
 ];
 
 app.use(
