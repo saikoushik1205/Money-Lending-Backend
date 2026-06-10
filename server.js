@@ -14,7 +14,11 @@ connectDB();
 app.use(helmet());
 
 // CORS - Allow local frontend origins
-const allowedOrigins = ["http://localhost:4200", "http://localhost:4300"];
+const allowedOrigins = [
+  "http://localhost:4200",
+  "http://localhost:4300",
+  "https://your-app.vercel.app",
+];
 
 app.use(
   cors({
